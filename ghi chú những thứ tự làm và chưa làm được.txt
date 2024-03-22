@@ -3,8 +3,6 @@
 
 - Phân trang có thể sử dụng form DataTable có sẵn trên mạng
 
-- Bài 10: Làm các nút check IsSale, IsHot tương tự như IsActive, IsHome
-
 chưa làm được : 
 - tìm kiếm sản phẩm ở index/home
 - thêm thuộc tính kích thước(size) quần - áo, ghi chú đơn mua hàng, giảm giá(%)
