@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<!-- Slider -->
+
+<div class="main_slider" style="background-image:url(Content/assets/images/banner_1.png)">
+    <div class="container fill_height">
+        <div class="row align-items-center fill_height">
+            <div class="col">
+                <div class="main_slider_content">
+                    <h6>Mùa hè / Bộ sưu tập mùa hè 2024</h6>
+                    <h1>Giảm giá 30% với toàn bộ sản phẩm</h1>
+                    <div class="red_button shop_now_button"><a href="#">Mua ngay</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner -->
+
+<!-- New Arrivals -->
+
+<div class="new_arrivals">
+    <div class="container">
+        @Html.Action("MenuArrivals", "Menu")
+    </div>
+</div>
+
+<!-- Deal of the week -->
+
+<div class="deal_ofthe_week" style="margin-top: 80px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="deal_ofthe_week_img">
+                    <img src="~/Content/assets/images/banner_4.jpg" alt="" style="margin-left: -90px;" />
+                </div>
+            </div>
+            <div class="col-lg-6 text-right deal_ofthe_week_col">
+                <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+                    <ul class="timer">
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="day" class="timer_num">03</div>
+                            <div class="timer_unit">Day</div>
+                        </li>
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="hour" class="timer_num">15</div>
+                            <div class="timer_unit">Hours</div>
+                        </li>
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="minute" class="timer_num">45</div>
+                            <div class="timer_unit">Mins</div>
+                        </li>
+                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <div id="second" class="timer_num">23</div>
+                            <div class="timer_unit">Sec</div>
+                        </li>
+                    </ul>
+                    <div class="red_button deal_ofthe_week_button"><a href="#">shop now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Best Sellers -->
+
+@Html.Action("Partial_ItemsBySales", "Products")
+
+<!-- Benefit -->
+
+<div class="benefit" style="margin-top: 150px;">
+    <div class="container">
+        <div class="row benefit_row">
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>miễn phí vận chuyển</h6>
+                        <p>Thay đổi dưới một số hình thức</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Thanh toán dễ dàng</h6>
+                        <p>Trực tuyến | Khi nhận hàng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Hoàn trả trong 45 ngày</h6>
+                        <p>Uy tín đặt lên hàng đầu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>giờ mở cửa</h6>
+                        <p>8:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blogs -->
+
+@Html.Action("Partial_News_Home", "News")
